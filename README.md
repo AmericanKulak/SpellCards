@@ -1,4 +1,4 @@
-Olympus
+SpellCards
 =======
 
-Stand-Alone Project for Playtesting
+A project to properly format printable Pathfinder Spell Cards
