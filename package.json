@@ -1,0 +1,17 @@
+{
+  "name": "SpellCards",
+  "version": "0.0.1",
+  "description": "Creates Spell Summary Cards for Pathfinder",
+  "main": "app.js",
+  "dependencies": {
+    "express": ">=3.x",
+    "jade": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kacy Humphrey",
+  "license": "MIT",
+  "private": true
+}
