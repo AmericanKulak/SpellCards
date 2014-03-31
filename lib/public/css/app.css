@@ -4,14 +4,39 @@
   clear: both;
 }
 
+.cardContainer
+{
+	padding: 0px 33px !important;
+	margin-top: 5px;
+	margin-bottom: 55px;
+	height: 210px;
+}
+
 .spell
 {
 	font-family: Calibri;
 	font-size: 9px;
-	padding: 0px 33px !important;
-	height: 210px;
-	margin-bottom: 55px;
 	position: relative;
+	height: 210px;
+}
+
+.cardBack
+{
+	position: relative;
+}
+
+.cardBackImage
+{
+	display: block;
+	margin: 0px auto;
+	height: 210px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.spell, .cardBack {
+	outline:1px dashed rgba(0,0,0,0.1);
+	outline-offset:2px;
 }
 
 .spellHeader {
@@ -27,6 +52,6 @@
 	position: absolute;
 	bottom: 0px;
 	font-size: 8px;
-	right: 33px;
-	left: 33px;
+	right: 0px;
+	left: 0px;
 }

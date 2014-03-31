@@ -2,40 +2,41 @@ doctype html
 html
 	head
 
-		title= title
+		title Spell Cards
+
 
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-		link(rel="stylesheet", href="/css/normalize.css")
 		link(rel="stylesheet", href="/css/bootstrap.min.css")
 		link(rel="stylesheet", href="/css/app.css")
 		link(rel="stylesheet", type="text/css", media="print", href="/css/bootstrap.min.css")
 		
-		script(src="/js/jquery-2.1.0.min.js")
+		script(src="/js/jquery-2.1.0.js")
 		script(src="/js/bootstrap.min.js")
 
 	body
 		div.container
 			div.row
 				each spell in spells
-					div.col-xs-6.spell
-						div.spellHeader
-							div.line.line1
-								span.spellName= spell.name
-								span.spellResistances.pull-right= spell.save + " - " + spell.SR
-							div.line
-								span.action= spell.action
-								span.range.pull-right= spell.range
-							div.line
-								span.components= spell.components
-								span.target.pull-right= spell.target
-							div.line
-								span.duration= spell.duration
-						div.spellBody
-							div.description
-								each descrip in spell.description
-									p= descrip
-						div.spellFooter
-							div.line
-								span.school= "School " + spell.school
-								span.level.pull-right= "Level " + spell.level
+					div.col-xs-6.cardContainer
+						div.spell
+							div.spellHeader
+								div.line.line1
+									span.spellName= spell.name
+									span.spellResistances.pull-right= spell.save + " - " + spell.SR
+								div.line
+									span.action= spell.action
+									span.range.pull-right= spell.range
+								div.line
+									span.components= spell.components
+									span.target.pull-right= spell.target
+								div.line
+									span.duration= spell.duration
+							div.spellBody
+								div.description
+									each descrip in spell.description
+										p= descrip
+							div.spellFooter
+								div.line
+									span.school= "School " + spell.school
+									span.level.pull-right= "Level " + spell.level

@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+
+		title Spell Backs
+
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		link(rel="stylesheet", href="/css/bootstrap.min.css")
+		link(rel="stylesheet", href="/css/app.css")
+		link(rel="stylesheet", type="text/css", media="print", href="/css/bootstrap.min.css")
+		
+		script(src="/js/jquery-2.1.0.js")
+		script(src="/js/bootstrap.min.js")
+
+	body
+		div.container
+			div.row
+				each spell in spells
+					div.col-xs-6.cardContainer
+						div.cardBack
+							img(src="/img/deitySymbol.jpg").cardBackImage
